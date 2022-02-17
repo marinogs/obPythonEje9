@@ -1,16 +1,25 @@
-# This is a sample Python script.
+# OpenBootcamp Curso Python Ejercicio 9
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+# Crea un script que le pida al usuario una lista de países (separados por comas). Éstos se deben almacenar en una lista.
+# No debería haber países repetidos (haz uso de set). Finalmente, muestra por consola la lista de países ordenados
+# alfabéticamente y separados por comas.
+#
+# Por otro lado, tienes que crear una aplicación que obtendrá los elementos impares de una lista pasada por parámetro
+# con filter y realizará una suma de todos estos elementos obtenidos mediante reduce.
 
+def main():
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+    lista = ["", "", "", "", "", ""]
+    i = 0
+    while i < 6:
+        pais = input("Introduce un pais")
+        lista[i] = pais
+        i += 1
 
+    sinRepes = set(lista)
+    paises = sorted(sinRepes)
+    print(paises)
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    main()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
